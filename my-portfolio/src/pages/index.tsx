@@ -9,11 +9,16 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Github, Linkedin, Instagram } from "lucide-react";
+import { Github, Linkedin, Instagram, Earth, BookHeart, Trophy, DollarSign, Building, School } from "lucide-react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
-import TimelineItem from "@/components/TimelineItem";
+import { Experiences } from "@/components/Experiences";
+import { Timeline, TimelineItem, TimelineSeparator, TimelineConnector, TimelineContent, TimelineDot } from "@mui/lab";
+import ExperienceCard from "@/components/ExperienceCard";
+import { Projects } from "@/components/Projects";
+
 
 export default function() {
+    const [expandedIndex, setExpandedIndex] = useState(null);
     return (
         <div>
             {/* HOME */}
@@ -178,70 +183,79 @@ export default function() {
                         <span className="font-semibold">Vatican City</span> as I was on the bridge connecting it.
                     </p>
                 </div>
-                <div className = "w-full flex justify-center mt-8">
-                    <h3 className = "text-lg sm:text-xl md:text-3xl font-medium text-gray-800 text-center px-4 py-4 uppercase" style = {{ fontFamily: "'Cormorant Garamond', serif" }}
-                    >
-                        Here are some pictures of me. (enjoy)
-                    </h3>
-                </div>
-                {/* IMAGE CAROUSEL */}
-                <div className = "w-full px-4 sm:px-6 lg:px-8 mx-auto mt-5 mb-10">
-                    <Swiper
-                        modules = {[Navigation, Pagination, Autoplay]}
-                        spaceBetween = {5}
-                        slidesPerView = {1}
-                        navigation
-                        pagination = {{ clickable: true }}
-                        autoplay = {{ delay: 3000 }}
-                        loop = {true}
-                        breakpoints = {{
-                            640: { slidesPerView: 1 },
-                            768: { slidesPerView: 2 },
-                            1024: { slidesPerView: 3 },
-                        }}
-                        className = "rounded-[5px] overflow-hidden shadow-xl max-w-sm sm:max-w-md md:max-w-lg lg:max-w-4xl"
-                    >
-                        <SwiperSlide>
-                            <Image
-                                src = "/assets/profile-pic-2.jpg"
-                                alt = "gallery picture"
-                                width = {500}
-                                height = {300}
-                                className = "w-full h-[350px] sm:h-[350px] md:h-[350px] lg:h-[350px] object-cover"
-                            />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <Image
-                                src = "/assets/profile-pic-1.jpg"
-                                alt = "gallery picture"
-                                width = {500}
-                                height = {300}
-                                className = "w-full h-[350px] sm:h-[350px] md:h-[350px] lg:h-[350px] object-cover"
-                            />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <Image
-                                src = "/assets/about-me-pic.jpg"
-                                alt = "gallery picture"
-                                width = {500}
-                                height = {300}
-                                className = "w-full h-[350px] sm:h-[350px] md:h-[350px] lg:h-[350px] object-cover"
-                            />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <Image
-                                src = "/assets/profile-pic-1.jpg"
-                                alt = "gallery picture"
-                                width = {500}
-                                height = {300}
-                                className = "w-full h-[350px] sm:h-[350px] md:h-[350px] lg:h-[350px] object-cover"
-                            />
-                        </SwiperSlide>
-                    </Swiper>
-                </div>
             </section>
 
             {/* EXPERIENCE */}
+            <section id = "experience" className = "py-12 bg-white">
+                <div className = "max-w-6xl mx-auto px-6">
+                    <div className = "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                        {Experiences.map((exp, index) => (
+                            <ExperienceCard key = {index} experience = {exp} index = {index} />
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+
+
+            {/* PROJECTS
+            <section id="projects" className="py-16 bg-gray-100 text-center">
+            IMAGE CAROUSEL
+            <div className = "w-full px-4 sm:px-6 lg:px-8 mx-auto mt-5 mb-10">
+                            <Swiper
+                                modules = {[Navigation, Pagination, Autoplay]}
+                                spaceBetween = {5}
+                                slidesPerView = {1}
+                                navigation
+                                pagination = {{ clickable: true }}
+                                autoplay = {{ delay: 3000 }}
+                                loop = {true}
+                                breakpoints = {{
+                                    640: { slidesPerView: 1 },
+                                    768: { slidesPerView: 2 },
+                                    1024: { slidesPerView: 3 },
+                                }}
+                                className = "rounded-[5px] overflow-hidden shadow-xl max-w-sm sm:max-w-md md:max-w-lg lg:max-w-4xl"
+                            >
+                                <SwiperSlide>
+                                    <Image
+                                        src = "/assets/profile-pic-2.jpg"
+                                        alt = "gallery picture"
+                                        width = {500}
+                                        height = {300}
+                                        className = "w-full h-[350px] sm:h-[350px] md:h-[350px] lg:h-[350px] object-cover"
+                                    />
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <Image
+                                        src = "/assets/profile-pic-1.jpg"
+                                        alt = "gallery picture"
+                                        width = {500}
+                                        height = {300}
+                                        className = "w-full h-[350px] sm:h-[350px] md:h-[350px] lg:h-[350px] object-cover"
+                                    />
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <Image
+                                        src = "/assets/about-me-pic.jpg"
+                                        alt = "gallery picture"
+                                        width = {500}
+                                        height = {300}
+                                        className = "w-full h-[350px] sm:h-[350px] md:h-[350px] lg:h-[350px] object-cover"
+                                    />
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <Image
+                                        src = "/assets/profile-pic-1.jpg"
+                                        alt = "gallery picture"
+                                        width = {500}
+                                        height = {300}
+                                        className = "w-full h-[350px] sm:h-[350px] md:h-[350px] lg:h-[350px] object-cover"
+                                    />
+                                </SwiperSlide>
+                            </Swiper>
+                        </div>
+            </section> */}
 
             {/* SKILLS */}
         </div>
