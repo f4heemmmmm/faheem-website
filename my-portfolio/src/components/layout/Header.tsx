@@ -16,7 +16,7 @@ export default function Navbar() {
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
-    const scrollToSection = (id) => {
+    const scrollToSection = (id: string) => {
         const section = document.getElementById(id);
         if (section) {
             const yOffset = -60; // Adjust based on navbar height
