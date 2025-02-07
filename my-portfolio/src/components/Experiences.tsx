@@ -22,5 +22,5 @@ export const Experiences = [
         image: "/assets/experience-3.jpg",
         description: "Performed Border and Ground Patrol, collaborated with government agencies, managed events for officer welfare, and volunteered to mentor at-risk youths. Awarded multiple Commander’s Awards and honored as 183rd Intake Valedictorian.",
         date: "Apr 2021 - Aug 2023"
-    }
+    },
 ];

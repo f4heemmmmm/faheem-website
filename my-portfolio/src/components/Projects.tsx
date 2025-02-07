@@ -1,27 +1,33 @@
-
 export const Projects = [
     {
-      title: "Dancing Dunes",
-      description: "Capturing the breathtaking beauty of sand dunes through artistic lensmanship.",
-      image: "/assets/experience-1.jpg",
-      tags: ["Photography", "Art Direction"],
+      title: "RallyRank",
+      description: "Tennis Matchmaking and Tournament Management System",
+      image: "/assets/projects-1.jpg",
+      fullDescription: [
+        "Collaborated as a team to create a platform using Agile methodologies to provide tools for tennis players and RallyRank administrators.",
+        "Designed features for administrators to perform CRUD operations on tournaments and players, including automatic matchmaking for players using a custom Elo ranking algorithm for fair competition.",
+        "Engineered an interactive and user-friendly interface using React, JSX, and Axios, with tools to streamline code design such as JavaScript and Tailwind CSS. [Frontend]",
+        "Developed and implemented a monolithic architecture using Spring Boot and MongoDB for database management. [Backend]",
+        "Refined technical skills whilst working as a group or in a pair (through pair programming), to improve code design and structure."
+      ],
+      website: "https://rally-rank-frontend.web.app/"
     },
     {
-      title: "Ocean Vortex",
-      description: "A stunning capture of nature's raw power in the deep blue sea.",
-      image: "/assets/experience-2.jpg",
-      tags: ["Photography", "Nature"],
+      title: "HundredForNow",
+      description: "An original card game, in Java programming language.",
+      image: "/assets/projects-2.jpg",
+      fullDescription: [
+        "Developed a unique card game in Java.",
+        "Implemented game mechanics, logic, and UI elements for an engaging player experience."
+      ]
     },
     {
-      title: "Snowy Peaks",
-      description: "Exploring the serene beauty of icy mountain landscapes.",
-      image: "/assets/experience-3.jpg",
-      tags: ["Photography", "Travel"],
+      title: "Knightsbridge House",
+      description: "Designed and developed the official website for Knightsbridge House, creating a user-friendly and visually engaging platform to showcase its educational programs and mission.",
+      image: "/assets/projects-3.jpg",
+      fullDescription: [
+        "Designed and built a responsive website for Knightsbridge House.",
+        "Incorporated modern UI/UX principles to ensure seamless navigation and an intuitive user experience."
+      ]
     },
-    {
-      title: "Rocky Shores",
-      description: "Dramatic coastlines meeting the open sea, a breathtaking natural spectacle.",
-      image: "/assets/experience-1.jpg",
-      tags: ["Photography", "Adventure"],
-    },
-  ];
+];
