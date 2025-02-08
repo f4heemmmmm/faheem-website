@@ -7,6 +7,9 @@ export default {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  images: {
+    unoptimized: true, // This disables automatic optimization
+  },
   theme: {
   	extend: {
   		colors: {
