@@ -1,3 +1,11 @@
+type Experiences = {
+    title: string;
+    image: string;
+    description: string;
+    date: string[];
+  };
+
+
 export const Experiences = [
     {
         title: "My Experience",
