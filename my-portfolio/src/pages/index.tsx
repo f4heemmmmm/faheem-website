@@ -21,7 +21,7 @@ import { Projects } from "@/components/Projects";
 import Tilt from "react-parallax-tilt";
 
 export default function() {
-    const [selectedProject, setSelectedProject] = useState(false);
+    const [selectedProject, setSelectedProject] = useState(null);
     return (
         <div>
             {/* HOME */}
@@ -55,9 +55,9 @@ export default function() {
                         transition = {{ duration: 0.6 }}
                     >
                         {/* PROFILE PICTURE */}
-                        <div className = "relatove w-48 h-48 md:w-96 md:h-96">
+                        <div className = "relative w-48 h-48 md:w-96 md:h-96">
                             <Image
-                                src = "/assets/profile-pic-1.jpg"
+                                src = "/assets/profile-pic-2.jpg"
                                 alt = "faheem's profile pic"
                                 layout = "fill"
                                 objectFit = "cover"
