@@ -96,7 +96,7 @@ export default function() {
                         </a>
                         {/* INSTAGRAM */}
                         <a
-                            href = "https://instagram.com/f4heemmmm"
+                            href = "https://instagram.com"
                             target = "_blank"
                             rel = "noopener noreferrer"
                             className = "text-xl hover:text-red-500 hover:scale-125"
