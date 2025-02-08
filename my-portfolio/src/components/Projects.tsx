@@ -1,3 +1,11 @@
+type Project = {
+    title: string;
+    description: string;
+    image: string;
+    fullDescription: string[];
+    website?: string; // Optional because some projects don't have it
+  };
+
 export const Projects = [
     {
       title: "RallyRank",

@@ -5,7 +5,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import Image from "next/image";
-import { useState } from "react";
+import { JSXElementConstructor, Key, ReactElement, ReactNode, ReactPortal, useState } from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -21,7 +21,16 @@ import { Projects } from "@/components/Projects";
 import Tilt from "react-parallax-tilt";
 
 export default function() {
-    const [selectedProject, setSelectedProject] = useState(null);
+    const [selectedProject, setSelectedProject] = useState<selectedProject | null>(null);
+
+
+    type selectedProject = {
+        title: string;
+        description: string;
+        image: string;
+        fullDescription: string[];
+        website?: string; // Optional because some projects don't have it
+      };
     return (
         <div>
             {/* HOME */}
@@ -268,7 +277,7 @@ export default function() {
                             </h3>
                             <div className = "w-20 h-1 bg-gray-600 mx-auto mb-4 rounded-full" />
                             <ul className = "list-none space-y-3 text-gray-800 text-sm leading-relaxed">
-                                {selectedProject.fullDescription.map((point, index) => (
+                                {selectedProject.fullDescription.map((point: string | number | bigint | boolean | ReactElement<unknown, string | JSXElementConstructor<any>> | Iterable<ReactNode> | ReactPortal | Promise<string | number | bigint | boolean | ReactPortal | ReactElement<unknown, string | JSXElementConstructor<any>> | Iterable<ReactNode> | null | undefined> | null | undefined, index: Key | null | undefined) => (
                                     <li key = {index} className = "flex items-center gap-2">
                                         <ChartNoAxesColumnIncreasing className = "w-4 h-4 text-gray-600 flex-shrink-0" />
                                         <span> {point} </span>
