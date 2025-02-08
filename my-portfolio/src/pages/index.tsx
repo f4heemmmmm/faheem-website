@@ -66,7 +66,7 @@ export default function() {
                         {/* PROFILE PICTURE */}
                         <div className = "relative w-48 h-48 md:w-96 md:h-96">
                             <Image
-                                src = "/assets/profile-pic-2.jpg"
+                                src = "/assets/images/profile-pic-2.jpg"
                                 alt = "faheem's profile pic"
                                 layout = "fill"
                                 objectFit = "cover"
@@ -142,7 +142,7 @@ export default function() {
             <section id = "about" className = "relative min-h-screen bg-gray-300 flex flex-col">
                 <div className = "relative w-full h-[35vh] md:h-[45vh]">
                     <Image
-                        src = "/assets/about-me.jpg"
+                        src = "/assets/images/about-me.jpg"
                         alt = "background"
                         layout = "fill"
                         objectFit = "cover"
