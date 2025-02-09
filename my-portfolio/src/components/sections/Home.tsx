@@ -9,9 +9,9 @@ function Home() {
     return (
         <div className = "flex flex-col md:flex-row items-center justify-between w-full max-w-5xl">
             <div className = "text-white max-w-lg">
-                <p className = "text-lg mb-2"> hello, i am </p>
-                <h1 className = "text-4xl md:text-5xl font-bold text-red-500 mb-3"> faheem kamel </h1>
-                <p className = "text-lg mt-2 font-medium"> an aspiring software developer or cybersecurity analyst. </p>
+                <p className = "text-xl mb-2"> hello, i am </p>
+                <h1 className = "text-5xl md:text-6xl font-bold text-red-500 mb-3"> faheem kamel </h1>
+                <p className = "text-xl mt-2 font-medium"> an aspiring software developer or cybersecurity analyst. </p>
                 <div className = "mt-6 flex space-x-4 gap-2">
                     <a
                         href = "/assets/faheem_kamel_resume.pdf"
@@ -19,12 +19,12 @@ function Home() {
                         rel = "noopener noreferrer"
                     >
                         {/* MY RESUME BUTTON */}
-                        <Button className = "bg-red-500 text-white px-6 py-3 rounded-[15px] font-semibold transition-transform duration-300 transform hover:scale-125">
+                        <Button className = "bg-red-500 text-white px-6 py-3 rounded-[12px] font-semibold items-center transition-transform duration-300 transform hover:scale-125">
                             my resume
                         </Button>
                     </a>
                     {/* ADD LINK TO CONTACT ME PAGE */}
-                    <Button variant = "outline" className = "border-red-500 text-red-500 px-6 py-3 rounded-[15px] font-semibold transition-transform duration-300 transform hover:scale-125">
+                    <Button variant = "outline" className = "border-red-500 text-red-500 px-6 py-3 rounded-[12px] items-center font-semibold transition-transform duration-300 transform hover:scale-125">
                         contact me
                     </Button>
                 </div>
@@ -53,7 +53,7 @@ function Home() {
                     href = "https://github.com/f4heemmmmm"
                     target = "_blank"
                     rel = "noopener noreferrer"
-                    className = "text-xl hover:text-red-500 hover:scale-125"
+                    className = "text-xl hover:text-red-500 hover:scale-125 transition-transform duration-300"
                 >
                     <Github size = {24} />
                 </a>
@@ -62,7 +62,7 @@ function Home() {
                     href = "https://linkedin.com/in/faheemkamel/"
                     target = "_blank"
                     rel = "noopener noreferrer"
-                    className = "text-xl hover:text-red-500 hover:scale-125"
+                    className = "text-xl hover:text-red-500 hover:scale-125 transition-transform duration-300"
                 >
                     <Linkedin size = {24} />
                 </a>
@@ -71,7 +71,7 @@ function Home() {
                     href = "https://instagram.com"
                     target = "_blank"
                     rel = "noopener noreferrer"
-                    className = "text-xl hover:text-red-500 hover:scale-125"
+                    className = "text-xl hover:text-red-500 hover:scale-125 transition-transform duration-300"
                 >
                     <Instagram size = {24} />
                 </a>
@@ -84,7 +84,7 @@ function Home() {
                     href = "https://github.com/f4heemmmmm"
                     target = "_blank"
                     rel = "noopener noreferrer"
-                    className = "text-xl hover:text-red-500 hover:scale-125"
+                    className = "text-xl hover:text-red-500 hover:scale-125 transition-transform duration-300"
                 >
                     <Github size = {24} />
                 </a>
@@ -93,7 +93,7 @@ function Home() {
                     href = "https://linkedin.com/in/faheemkamel/"
                     target = "_blank"
                     rel = "noopener noreferrer"
-                    className = "text-xl hover:text-red-500 hover:scale-125"
+                    className = "text-xl hover:text-red-500 hover:scale-125 transition-transform duration-300"
                 >
                     <Linkedin size = {24} />
                 </a>
@@ -102,7 +102,7 @@ function Home() {
                     href = "https://instagram.com/f4heemmmm"
                     target = "_blank"
                     rel = "noopener noreferrer"
-                    className = "text-xl hover:text-red-500 hover:scale-125"
+                    className = "text-xl hover:text-red-500 hover:scale-125 transition-transform duration-300"
                 >
                     <Instagram size = {24} />
                 </a>

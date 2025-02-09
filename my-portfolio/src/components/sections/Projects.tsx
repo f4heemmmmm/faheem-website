@@ -31,13 +31,13 @@ function Projects() {
                     nextEl: ".swiper-button-next",
                     prevEl: ".swiper-button-prev",
                 }}
-                spaceBetween = {30}
+                spaceBetween = {20}
                 slidesPerView = {1}
                 breakpoints = {{
-                    480: { slidesPerView: 1.2, spaceBetween: 20 },
+                    480: { slidesPerView: 1, spaceBetween: 25 },
                     640: { slidesPerView: 1.5, spaceBetween: 25 },
                     768: { slidesPerView: 2, spaceBetween: 30 },
-                    1024: { slidesPerView: 3, spaceBetween: 30 },
+                    1024: { slidesPerView: 3, spaceBetween: 25 },
                 }}
                 centeredSlides = {true}
                 className = "flex items-center justify-center"
@@ -51,7 +51,7 @@ function Projects() {
                         perspective = {1000}
                         scale = {0.9}
                         transitionSpeed = {500}
-                        className = "w-64 h-[28rem] sm:w-72 sm:h-[32rem] md:w-80 md:h-[36rem] mx-auto rounded-[12px] overflow-hidden shadow-lg cursor-pointer"
+                        className = "w-96 h-[28rem] sm:w-60 sm:h-[32rem] md:w-72 md:h-[36rem] mx-auto rounded-[12px] overflow-hidden shadow-lg cursor-pointer"
                     >
                         <div
                             className = "relative w-full h-full"
