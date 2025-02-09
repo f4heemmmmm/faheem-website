@@ -54,7 +54,7 @@ export default function Main() {
             {/* SECTION 4: PROJECTS */}
             <section id = "projects" className = "min-h-screen relative w-full px-6 sm:px-12 py-16">
                 <h2 className = "text-4xl font-semibold text-center"> projects </h2>
-                <p className = "text-center text-gray-600 mt-2 max-w-lg mx-auto mb-5">
+                <p className = "text-center text-gray-600 mt-2 max-w-lg mx-auto mb-8">
                     take a look at some of the projects that i have embarked on.
                 </p>
                 <Projects />
