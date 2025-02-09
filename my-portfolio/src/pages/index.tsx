@@ -60,7 +60,7 @@ export default function Main() {
                 <Projects />
             </section>
             {/* SECTION 5: SKILLS */}
-            <section id = "skills" className = "min-h-screen relative py-16 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white overflow-hidden" onMouseMove = {handleMouseMove}>
+            <section id = "skills" className = "min-h-screen relative py-16 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white overflow-hidden items-center" onMouseMove = {handleMouseMove}>
                 <motion.div
                     className = "absolute inset-0 pointer-events-none"
                     style = {{

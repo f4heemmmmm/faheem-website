@@ -9,7 +9,7 @@ function ExperienceCard({ experience, index }: { experience: any; index: number 
     if (index === 0) {
         return (
             <div className = "relative w-full aspect-square bg-black text-white flex items-center justify-center shadow-lg p-6" style = {{ fontFamily: "'Cormorant Garamond', serif" }}>
-                <h3 className = "text-5xl font-medium"> My <br /> Experiences. </h3>
+                <h3 className = "text-5xl font-medium"> my <br /> experiences. </h3>
             </div>
         );
     };

@@ -8,7 +8,7 @@ type ExperiencesList = {
 
 export const ExperiencesList = [
     {
-        title: "My Experience",
+        title: "my experience",
         image: "",
         description: "",
         date: "",
