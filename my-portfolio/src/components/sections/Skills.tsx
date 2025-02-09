@@ -6,7 +6,7 @@ function Skills() {
     return (
         <div className = "max-w-3xl mx-auto px-6 relative">
             <motion.h2
-                className = "text-4xl font-semibold text-center mb-10"
+                className = "text-6xl font-bold text-center mb-10"
                 initial = {{ opacity: 0, y: -50 }}
                 animate = {{ opacity: 1, y: 0 }}
                 transition = {{ duration: 0.5 }}

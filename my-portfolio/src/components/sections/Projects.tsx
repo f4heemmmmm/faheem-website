@@ -51,7 +51,7 @@ function Projects() {
                         perspective = {1000}
                         scale = {0.9}
                         transitionSpeed = {500}
-                        className = "w-64 h-80 sm:w-72 sm:h-96 md:w-80 md:h-[28rem] mx-auto rounded-[12px] overflow-hidden shadow-lg cursor-pointer"
+                        className = "w-64 h-[28rem] sm:w-72 sm:h-[32rem] md:w-80 md:h-[36rem] mx-auto rounded-[12px] overflow-hidden shadow-lg cursor-pointer"
                     >
                         <div
                             className = "relative w-full h-full"
