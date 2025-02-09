@@ -24,7 +24,7 @@ function Projects() {
       };
     const [selectedProject, setSelectedProject] = useState<selectedProject | null>(null);
     return (
-        <div className = "relative mt-8">
+        <div className = "relative mt-15">
             <Swiper
                 modules = {[Navigation]}
                 navigation = {{
