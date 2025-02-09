@@ -24,21 +24,23 @@ function Projects() {
       };
     const [selectedProject, setSelectedProject] = useState<selectedProject | null>(null);
     return (
-        <div className = "relative mt-20">
+        <div className = "relative mt-20 max-w-screen-xl mx-auto px-4">
             <Swiper
                 modules = {[Navigation]}
                 navigation = {{
                     nextEl: ".swiper-button-next",
                     prevEl: ".swiper-button-prev",
                 }}
-                spaceBetween = {20}
+                spaceBetween = {10}
                 slidesPerView = {1}
                 breakpoints = {{
-                    480: { slidesPerView: 1, spaceBetween: 25 },
-                    640: { slidesPerView: 1.5, spaceBetween: 25 },
-                    768: { slidesPerView: 2, spaceBetween: 30 },
-                    1024: { slidesPerView: 3, spaceBetween: 25 },
+                    480: { slidesPerView: 1, spaceBetween: 15 },
+                    640: { slidesPerView: 1.5, spaceBetween: 15 },
+                    768: { slidesPerView: 2, spaceBetween: 15 },
+                    1024: { slidesPerView: 3, spaceBetween: 15 },
+                    1280: { slidesPerView: 3.5, spaceBetween: 15 },
                 }}
+
                 centeredSlides = {true}
                 className = "flex items-center justify-center"
             >
@@ -51,8 +53,8 @@ function Projects() {
                         perspective = {1000}
                         scale = {0.9}
                         transitionSpeed = {500}
-                        className = "w-96 h-[28rem] sm:w-60 sm:h-[32rem] md:w-72 md:h-[36rem] mx-auto rounded-[12px] overflow-hidden shadow-lg cursor-pointer"
-                    >
+                        className = "w-[clamp(14rem,25vw,22rem)] h-[clamp(20rem,30vw,28rem)] mx-auto rounded-[12px] overflow-hidden shadow-lg cursor-pointer"
+                        >
                         <div
                             className = "relative w-full h-full"
                             style = {{
