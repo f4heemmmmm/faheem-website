@@ -9,9 +9,9 @@ function Home() {
     return (
         <div className = "flex flex-col md:flex-row items-center justify-between w-full max-w-5xl">
             <div className = "text-white max-w-lg">
-                <p className = "text-xl mb-2"> hello, i am </p>
-                <h1 className = "text-5xl md:text-6xl font-bold text-red-500 mb-3"> faheem kamel </h1>
-                <p className = "text-xl mt-2 font-medium"> an aspiring software developer or cybersecurity analyst. </p>
+                <p className = "text-2xl mb-3"> hello, i am </p>
+                <h1 className = "text-6xl md:text-7xl font-bold text-red-500 mb-4"> faheem kamel </h1>
+                <p className = "text-2xl mt-2 font-medium"> an aspiring software developer or cybersecurity analyst. </p>
                 <div className = "mt-6 flex space-x-4 gap-2">
                     <a
                         href = "/assets/faheem_kamel_resume.pdf"
