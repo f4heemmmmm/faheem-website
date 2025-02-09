@@ -31,14 +31,14 @@ function Projects() {
                     nextEl: ".swiper-button-next",
                     prevEl: ".swiper-button-prev",
                 }}
-                spaceBetween = {10}
+                spaceBetween = {75}
                 slidesPerView = {1}
                 breakpoints = {{
                     480: { slidesPerView: 1, spaceBetween: 15 },
                     640: { slidesPerView: 1.5, spaceBetween: 15 },
-                    768: { slidesPerView: 2, spaceBetween: 15 },
-                    1024: { slidesPerView: 3, spaceBetween: 15 },
-                    1280: { slidesPerView: 3.5, spaceBetween: 15 },
+                    768: { slidesPerView: 2, spaceBetween: 40 },
+                    1024: { slidesPerView: 3, spaceBetween: 50 },
+                    1280: { slidesPerView: 3.5, spaceBetween: 75 },
                 }}
 
                 centeredSlides = {true}
