@@ -35,7 +35,7 @@ function NavigationBar() {
                     <button className = "nav-link text-white hover:text-white focus:ring-0" onClick = {() => document.getElementById("home")?.scrollIntoView({ behavior: "smooth" })}> home </button>
                     <button className = "nav-link text-white hover:text-white focus:ring-0" onClick = {() => scrollToSection("about")}> about me </button>
                     <button className = "nav-link text-white hover:text-white focus:ring-0" onClick = {() => scrollToSection("experiences")}> experiences </button>
-                    <button className = "nav-link text-white hover:text-white focus:ring-0" onClick = {() => scrollToSection("projects]")}> projects </button>
+                    <button className = "nav-link text-white hover:text-white focus:ring-0" onClick = {() => scrollToSection("projects")}> projects </button>
                     <button className = "nav-link text-white hover:text-white focus:ring-0" onClick = {() => scrollToSection("skills")}> skills </button>
                     {/*
                         CHANGE CONTACT PAGE TO A NEW PAGE INSTEAD OF SECTION

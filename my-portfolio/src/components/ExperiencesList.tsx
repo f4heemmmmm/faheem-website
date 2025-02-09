@@ -1,4 +1,4 @@
-type Experiences = {
+type ExperiencesList = {
     title: string;
     image: string;
     description: string;
@@ -6,7 +6,7 @@ type Experiences = {
   };
 
 
-export const Experiences = [
+export const ExperiencesList = [
     {
         title: "My Experience",
         image: "",

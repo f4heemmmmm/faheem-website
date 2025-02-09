@@ -1,4 +1,4 @@
-type Project = {
+type ProjectsList = {
     title: string;
     description: string;
     image: string;
@@ -6,7 +6,7 @@ type Project = {
     website?: string; // Optional because some projects don't have it
   };
 
-export const Projects = [
+export const ProjectsList = [
     {
       title: "RallyRank",
       description: "Tennis Matchmaking and Tournament Management System",
