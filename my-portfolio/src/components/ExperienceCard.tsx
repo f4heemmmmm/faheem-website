@@ -15,7 +15,7 @@ function ExperienceCard({ experience, index }: { experience: any; index: number 
     };
 
     return (
-        <div 
+        <div
             className = "relative w-full aspect-square cursor-pointer overflow-hidden shadow-lg"
             onMouseEnter = {() => setHovered(true)}
             onMouseLeave = {() => setHovered(false)}
