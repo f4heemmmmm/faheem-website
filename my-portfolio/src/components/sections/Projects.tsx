@@ -3,7 +3,7 @@ import React from "react";
 import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 import { ProjectsList } from "../ProjectsList";
-import { X, ChartNoAxesColumnIncreasing, Globe } from "lucide-react";
+import { X, ChartNoAxesColumnIncreasing, Globe, Mouse } from "lucide-react";
 import { JSXElementConstructor, Key, ReactElement, ReactNode, ReactPortal, useState } from "react";
 
 
@@ -12,7 +12,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import { Navigation, Mousewheel } from "swiper/modules";
 
 function Projects() {
     type selectedProject = {
@@ -26,7 +26,7 @@ function Projects() {
     return (
         <div className = "relative mt-20 max-w-screen-xl mx-auto px-4">
             <Swiper
-                modules = {[Navigation]}
+                modules = {[Navigation, Mousewheel]}
                 navigation = {{
                     nextEl: ".swiper-button-next",
                     prevEl: ".swiper-button-prev",
@@ -40,7 +40,7 @@ function Projects() {
                     1024: { slidesPerView: 3, spaceBetween: 50 },
                     1280: { slidesPerView: 3.5, spaceBetween: 75 },
                 }}
-
+                mousewheel = {{ forceToAxis: true }}
                 centeredSlides = {true}
                 className = "flex items-center justify-center"
             >
@@ -65,7 +65,7 @@ function Projects() {
                             onClick = {() => setSelectedProject(project)}
                         >
                             <div className = "absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-4">
-                                <h3 className = "text-white text-lg font-semibold">{project.title}</h3>
+                                <h3 className = "text-white text-xl font-semibold">{project.title}</h3>
                                 <p className = "text-gray-300 text-sm">{project.description}</p>
                             </div>
                         </div>
