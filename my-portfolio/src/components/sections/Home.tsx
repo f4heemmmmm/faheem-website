@@ -38,7 +38,7 @@ function Home() {
                 {/* PROFILE PICTURE */}
                 <div className = "relative w-48 h-48 md:w-96 md:h-96">
                     <Image
-                        src = "/assets/images/profile-pic-2.jpg"
+                        src = "/assets/images/profile-pic-1.jpg"
                         alt = "faheem's profile pic"
                         layout = "fill"
                         objectFit = "cover"
