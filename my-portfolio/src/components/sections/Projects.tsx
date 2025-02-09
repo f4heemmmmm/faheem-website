@@ -53,7 +53,7 @@ function Projects() {
                         perspective = {1000}
                         scale = {0.9}
                         transitionSpeed = {500}
-                        className = "w-[clamp(14rem,25vw,22rem)] h-[clamp(20rem,30vw,28rem)] mx-auto rounded-[12px] overflow-hidden shadow-lg cursor-pointer"
+                        className = "w-[clamp(14rem,25vw,22rem)] h-[clamp(22rem,34vw,32rem)] mx-auto rounded-[12px] overflow-hidden shadow-lg cursor-pointer"
                         >
                         <div
                             className = "relative w-full h-full"
