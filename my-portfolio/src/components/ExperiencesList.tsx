@@ -14,10 +14,16 @@ export const ExperiencesList = [
         date: "",
     },
     {
+        title: "Ensign Infosecurity - Full Stack Developer (Internship)",
+        image: "/assets/images/experience-4.jpg",
+        description: "Work In Progress",
+        date: "Mar 2025 - Present",
+    },
+    {
         title: "The Next Lap – Part-Time Tutor",
         image: "/assets/images/experience-1.jpg",
         description: "Educated students in Mathematics, English, and Science (Primary 1-6). Taught Mathematics, Chemistry, and Physics (Secondary 1-4). Customized lesson plans and leveraged academic experiences to enhance student learning.",
-        date: "May 2024 - Present",
+        date: "May 2024 - Apr 2025",
     },
     {
         title: "Friends2Gather Community Service – Mentor",
