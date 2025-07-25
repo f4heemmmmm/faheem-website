@@ -22,6 +22,7 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: "Mulish", var(--font-system);
+  zoom: 0.8;
 }
 
 @layer base {
