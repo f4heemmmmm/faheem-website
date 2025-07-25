@@ -292,7 +292,7 @@ function About() {
                     >
                         <div className="relative">
                             {/* Enhanced Image Collage Grid with Multiple Overlay Options */}
-                            <div className="grid grid-cols-3 grid-rows-6 gap-4 h-[1200px] lg:h-[1300px]">
+                            <div className="grid grid-cols-3 grid-rows-6 gap-8 h-[1200px] lg:h-[1300px]">
                                 {collageImages.map((img, index) => (
                                     <div
                                         key={index}
