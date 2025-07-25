@@ -17,7 +17,7 @@ export const ExperiencesList: Experience[] = [
     },
     {
         title: "Ensign Infosecurity - Full Stack Developer (Internship)",
-        image: "/assets/images/experience-4.jpg",
+        image: "/assets/images/experience-4.JPG",
         description: "Currently working as a Full Stack Developer intern, gaining hands-on experience in modern web development technologies. Contributing to real-world projects while learning industry best practices and collaborative development workflows.",
         date: "Mar 2025 - Present",
         category: "internship",
