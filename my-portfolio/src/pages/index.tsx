@@ -86,19 +86,7 @@ export default function Main() {
                 <Home />
             </section>
             {/* SECTION 2: ABOUT ME */}
-            <section id="about" className="min-h-screen relative bg-gray-300 flex flex-col items-center pb-16 md:pb-24">
-                <div className="relative w-full h-[40vh] md:h-[50vh] overflow-hidden">
-                    <Image
-                        src="/assets/images/about-me.jpg"
-                        alt="background image"
-                        layout="fill"
-                        objectFit="cover"
-                        className="opacity-80"
-                    />
-                    <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
-                        <h2 className="text-5xl md:text-7xl font-bold text-white uppercase text-center tracking-wide"> SO...WHO AM I? </h2>
-                    </div>
-                </div>
+            <section id="about" className="min-h-screen relative bg-gray-300 flex flex-col items-center ">
                 <About />
             </section>
             {/* SECTION 3: EXPERIENCES */}

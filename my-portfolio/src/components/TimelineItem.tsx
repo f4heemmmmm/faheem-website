@@ -29,6 +29,4 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
   </li>
 );
 
-
-
 export default TimelineItem;

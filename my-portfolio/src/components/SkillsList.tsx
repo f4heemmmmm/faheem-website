@@ -8,12 +8,12 @@ export const SkillsList = [
     {
       category: "Backend",
       icon: <Server className = "w-6 h-6 text-green-500" />,
-      skills: ["Node.js", "Express.js", "Spring Boot"],
+      skills: ["Node.js", "Express.js", "Spring Boot", "Nest.js"],
     },
     {
       category: "Database",
       icon: <Database className = "w-6 h-6 text-yellow-500" />,
-      skills: ["MongoDB", "MySQL", "Firebase"],
+      skills: ["MongoDB", "MySQL", "Firebase", "PostgreSQL"],
     },
     {
       category: "Programming Languages",
