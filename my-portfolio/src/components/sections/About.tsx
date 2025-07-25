@@ -54,27 +54,27 @@ function About() {
     // Enhanced collage images with multiple overlay options
     const collageImages: CollageImage[] = [
         { 
-            src: "/assets/images/pic-1.jpg", 
+            src: "/assets/images/pic-1.JPG", 
             alt: "Main profile photo",
             className: "col-span-2 row-span-2 rounded-2xl"
         },
         { 
-            src: "/assets/images/pic-2.jpg", 
+            src: "/assets/images/pic-2.JPG", 
             alt: "Sports action shot",
             className: "col-span-1 row-span-2 rounded-xl"
         },
         { 
-            src: "/assets/images/pic-3.jpg", 
+            src: "/assets/images/pic-3.JPG", 
             alt: "Travel landscape",
             className: "col-span-3 row-span-2 rounded-xl"
         },
         { 
-            src: "/assets/images/pic-4.jpg", 
+            src: "/assets/images/pic-4.JPG", 
             alt: "Coding workspace",
             className: "col-span-1 row-span-3 rounded-xl"
         },
         { 
-            src: "/assets/images/pic-5.jpg", 
+            src: "/assets/images/pic-5.JPG", 
             alt: "Group photo with friends",
             className: "col-span-2 row-span-3 rounded-xl"
         }
