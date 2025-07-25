@@ -45,7 +45,7 @@ function Skills() {
                                     <motion.p
                                         key = {i}
                                         whileHover = {{ scale: 1.02 }}
-                                        transition = {{ type: "spring", stiffness: "300" }}
+                                        transition = {{ type: "spring", stiffness: 300 }}
                                         className = "text-green-400 mt-4"
                                     >
                                         {`> ${item}`}
